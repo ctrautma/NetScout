@@ -1,5 +1,5 @@
 """
-telnetlib2.py
+telnetliblog.py
 
 Telnetlib module with better logging.
 
