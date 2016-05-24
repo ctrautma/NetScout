@@ -8,8 +8,13 @@ Can be used to connect or disconnect ports by name.
 Execute NetScout command
 
 optional arguments:
+
   -h, --help            show this help message and exit
+  
   --connect port1 port2
+  
                         Create a connection between two ports
+  
   --disconnect port [port ...]
+  
                         Disconnect a port(s) from its connection
