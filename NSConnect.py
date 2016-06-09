@@ -45,7 +45,11 @@ _LOCALE = locale.getlocale()[1]
 class NetScout_Command(object):
     def __init__(self, parser, args):
         self.args = args
-        if not any([args.connect, args.disconnect]):
+        if not any([args.connect,
+                    args.disconnect,
+                    args.listports,
+                    args.listgroups,
+                    args.portinfo]):
             print("No actions provided...")
             import sys
             parser.print_help()
@@ -90,6 +94,26 @@ class NetScout_Command(object):
         else:
             return False
 
+    def get_command_output(self, cmd, timeout=30):
+        self.tn.write('{}\r'.format(cmd).encode(_LOCALE))
+        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=timeout)
+        if out[0] != -1:
+            return out[2]
+        else:
+            return ''
+
+    def list_groups(self):
+        out = self.get_command_output('show groups', timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[2:-2]:
+            print(line)
+
+    def list_ports(self):
+        out = self.get_command_output('show ports', timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[2:-2]:
+            print(line)
+
     def logon(self):
         print("Attempting to logon to Netscout...")
         self.tn.write('\r'.encode(_LOCALE))
@@ -113,6 +137,20 @@ class NetScout_Command(object):
             self.connect(self.args.connect)
         if self.args.disconnect:
             self.disconnect(self.args.disconnect)
+        if self.args.listports:
+            self.list_ports()
+        if self.args.listgroups:
+            self.list_groups()
+        if self.args.portinfo:
+            self.show_port_info(self.args.portinfo)
+
+    def show_port_info(self, ports):
+        for port in ports:
+            out = self.get_command_output(
+                'show information Port {}'.format(port), timeout=60)
+            out = out.decode(_LOCALE).split('\r\n')
+            for line in out[0:-1]:
+                print(line)
 
     def write_settings(self):
         print("Config file not present....")
@@ -142,5 +180,11 @@ if __name__ == "__main__":
     parser.add_argument('--disconnect', nargs='+', type=str,
                         help='Disconnect a port(s) from its connection',
                         required=False, metavar=('port', 'port'))
+    parser.add_argument('--listgroups', action='store_true',
+                        help='Show list of available groups', required=False)
+    parser.add_argument('--listports', action='store_true',
+                        help='Show list of available ports', required=False)
+    parser.add_argument('--portinfo', nargs='+', type=str,
+                        help='Show information on ports', required=False)
     args = parser.parse_args()
     NETS = NetScout_Command(parser, args)
