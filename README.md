@@ -18,3 +18,8 @@ optional arguments:
   --disconnect port [port ...]
   
                         Disconnect a port(s) from its connection
+
+# Installation
+If using python 3.3 the selectors package will cause a problem
+because it it not readily available. To resolve install the 
+selectors34  package with pip.
