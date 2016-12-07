@@ -59,12 +59,15 @@ from logging.handlers import RotatingFileHandler
 import logging
 import sys
 import socket
-import selectors
 import time
 try:
     from time import monotonic as _time
 except ImportError:
     from time import time as _time
+try:
+    import selectors
+except ImportError:
+    import selectors34 as selectors
 
 __all__ = ["Telnet"]
 
