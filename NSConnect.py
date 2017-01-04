@@ -75,7 +75,12 @@ class NetScout_Command(object):
         print("Connecting to Netscout at {}".format(self._ip_addr))
         self.tn = telnetliblog.Telnet2(self._ip_addr, self._port)
 
-        self.logon()
+        try:
+            self.logon()
+        except Exception as e:
+            print(e)
+            import sys
+            sys.exit()
 
         self.parse_args()
 
@@ -129,6 +134,8 @@ class NetScout_Command(object):
         else:
             raise RuntimeError('Did not get password prompt!!!')
         out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=30)
+        if str(out[2]).find('Access denied. Username/Password is invalid!') > -1:
+            raise Exception('Access denied. Username/Password is invalid!')
         if out[0] == -1:
             raise RuntimeError('Failed to logon!!!')
 
