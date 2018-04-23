@@ -36,6 +36,8 @@ import argparse
 import base64
 import configparser
 import locale
+import os
+import sys
 import telnetliblog
 from time import sleep
 
@@ -47,15 +49,21 @@ class NetScout_Command(object):
         self.args = args
         if not any([args.connect,
                     args.disconnect,
+                    args.downloadhelp,
                     args.listports,
                     args.listgroups,
-                    args.portinfo]):
+                    args.portinfo,
+                    args.resetconfig,
+                    args.showconnections]):
             print("No actions provided...")
-            import sys
             parser.print_help()
             sys.exit(1)
 
         self._cfg = configparser.ConfigParser()
+
+        if self.args.resetconfig:
+            self.resetconfig()
+
         print("Checking for config file...")
         self._cfg.read('settings.cfg')
 
@@ -82,6 +90,9 @@ class NetScout_Command(object):
             import sys
             sys.exit()
 
+        if self.args.downloadhelp:
+            self.downloadhelp()
+
         self.parse_args()
 
     def connect(self, ports):
@@ -90,6 +101,16 @@ class NetScout_Command(object):
     def disconnect(self, ports):
         for port in ports:
             self.issue_command('connect PORT {} to null force'.format(port))
+
+    def downloadhelp(self):
+        self.tn.write('\r'.encode(_LOCALE))
+        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=30)
+        self.tn.write('help\r'.encode(_LOCALE))
+        print("Downloading help file to helpfile.txt")
+        out = self.tn.expect(['=\> '.encode(_LOCALE)], timeout=300, decoding='windows-1252')
+        with open('helpfile.txt', 'w') as fh:
+            fh.writelines(str(out[2]))
+        sys.exit(0)
 
     def issue_command(self, cmd, timeout=30):
         self.tn.write('{}\r'.format(cmd).encode(_LOCALE))
@@ -150,6 +171,18 @@ class NetScout_Command(object):
             self.list_groups()
         if self.args.portinfo:
             self.show_port_info(self.args.portinfo)
+        if self.args.showconnections:
+            self.show_port_connections()
+
+    def resetconfig(self):
+        if os.path.exists('settings.cfg'):
+            os.remove('settings.cfg')
+
+    def show_port_connections(self):
+        out = self.get_command_output('show connected ports', timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[2:-2]:
+            print(line)
 
     def show_port_info(self, ports):
         for port in ports:
@@ -187,11 +220,17 @@ if __name__ == "__main__":
     parser.add_argument('--disconnect', nargs='+', type=str,
                         help='Disconnect a port(s) from its connection',
                         required=False, metavar=('port', 'port'))
+    parser.add_argument('--downloadhelp', action='store_true',
+                        help='download help to local file and exit', required=False)
     parser.add_argument('--listgroups', action='store_true',
                         help='Show list of available groups', required=False)
     parser.add_argument('--listports', action='store_true',
                         help='Show list of available ports', required=False)
     parser.add_argument('--portinfo', nargs='+', type=str,
                         help='Show information on ports', required=False)
+    parser.add_argument('--resetconfig', action='store_true',
+                        help='Reset config file', required=False)
+    parser.add_argument('--showconnections', action='store_true',
+                        help='Show active port connections', required=False)
     args = parser.parse_args()
     NETS = NetScout_Command(parser, args)

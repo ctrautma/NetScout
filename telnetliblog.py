@@ -626,7 +626,7 @@ class Telnet2(object):
             else:
                 sys.stdout.flush()
 
-    def expect(self, list, timeout=None):
+    def expect(self, list, timeout=None, decoding='utf-8'):
         """Read until one from a list of a regular expressions matches.
 
         The first argument is a list of regular expressions, either
@@ -667,7 +667,7 @@ class Telnet2(object):
                         e = m.end()
                         text = self.cookedq[:e]
                         self.cookedq = self.cookedq[e:]
-                        self._write_to_log(text)
+                        self._write_to_log(text, decoding)
                         return (i, m, text)
                 if timeout is not None:
                     ready = selector.select(timeout)
@@ -683,11 +683,11 @@ class Telnet2(object):
             raise EOFError
         return (-1, None, text)
 
-    def _write_to_log(self, text):
+    def _write_to_log(self, text, decode_type='utf-8'):
         """
         Write the data given to the log
         """
-        self._tlnt_log.info(text.decode())
+        self._tlnt_log.info(text.decode(decode_type))
 
 
 def test():
