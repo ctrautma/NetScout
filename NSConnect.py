@@ -103,6 +103,17 @@ class NetScout_Command(object):
         for port in ports:
             self.issue_command('connect PORT {} to null force'.format(port))
 
+    def getconnected(self, port):
+        substr="Name"
+        ifaces=[]
+        out = self.get_command_output('show connection details port {}'.format(port), timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[0:-1]:
+            if substr in line:
+                part = line.split()[2]
+                ifaces.append(part)
+        return ifaces
+
     def get_switch_name(self):
         out = self.get_command_output('show switch', timeout=60)
         out = out.decode(_LOCALE).split('\r\n')
