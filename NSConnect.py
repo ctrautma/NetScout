@@ -96,12 +96,44 @@ class NetScout_Command(object):
         self.model = self.get_switch_model()
         self.parse_args()
 
+    #def connect(self, ports):
+    #    self.issue_command('connect PORT {} to PORT {} force'.format(*ports))
+
     def connect(self, ports):
-        self.issue_command('connect PORT {} to PORT {} force'.format(*ports))
+        if self.model == "HS-3200":
+            self.connect_hs3200(ports)
+        else:
+            self.issue_command('connect PORT {} to PORT {} force'.format(*ports))
+
+    def connect_hs3200(self, ports):
+        substr = "ERROR"
+        print('Connecting ports {} {}'.format(*ports))
+        self.issue_command('connect -d PORT {} PORT {}'.format(*ports))
+        out = self.get_command_output('activate -d PORT {} PORT {}'.format(*ports))
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[0:-1]:
+            if substr in line:
+                self.disconnect_hs3200(ports)
+                self.connect_hs3200(ports)
+                break
+
+    #def disconnect(self, ports):
+    #    for port in ports:
+    #        self.issue_command('connect PORT {} to null force'.format(port))
 
     def disconnect(self, ports):
+        if self.model == "HS-3200":
+            self.disconnect_hs3200(ports)
+        else:
+            for port in ports:
+                self.issue_command('connect PORT {} to null force'.format(port))
+
+    def disconnect_hs3200(self, ports):
+        print('Disconnecting connections to ports {} {}'.format(*ports))
         for port in ports:
-            self.issue_command('connect PORT {} to null force'.format(port))
+            connected_ports = self.getconnected(port)
+            if len(connected_ports) != 0:
+                self.issue_command('deactivate -d PORT {} PORT {}'.format(*connected_ports))
 
     def getconnected(self, port):
         substr="Name"
