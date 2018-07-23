@@ -93,6 +93,7 @@ class NetScout_Command(object):
         if self.args.downloadhelp:
             self.downloadhelp()
 
+        self.model = self.get_switch_model()
         self.parse_args()
 
     def connect(self, ports):
@@ -101,6 +102,24 @@ class NetScout_Command(object):
     def disconnect(self, ports):
         for port in ports:
             self.issue_command('connect PORT {} to null force'.format(port))
+
+    def get_switch_name(self):
+        out = self.get_command_output('show switch', timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        switch_name = out[0:-1][2]
+        return switch_name
+
+    def get_switch_model(self):
+        substr = "Model"
+        switch_model=""
+        switch_name = self.get_switch_name()
+        out = self.get_command_output('show switch {}'.format(switch_name), timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        for line in out[0:-1]:
+            if substr in line:
+                switch_model = line.split()[3][:-1]
+                break
+        return switch_model
 
     def downloadhelp(self):
         self.tn.write('\r'.encode(_LOCALE))
