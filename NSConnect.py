@@ -108,6 +108,11 @@ class NetScout_Command(object):
     def connect_hs3200(self, ports):
         substr = "ERROR"
         print('Connecting ports {} {}'.format(*ports))
+        port_list = self.list_ports_internal()
+        for i in ports:
+            if not i in port_list:
+                print("INPUT PORT invalid ,please check")
+                return
         self.issue_command('connect -d PORT {} PORT {}'.format(*ports))
         out = self.get_command_output('activate -d PORT {} PORT {}'.format(*ports))
         out = out.decode(_LOCALE).split('\r\n')
@@ -196,10 +201,14 @@ class NetScout_Command(object):
         for line in out[2:-2]:
             print(line)
 
-    def list_ports(self):
+    def list_ports_internal(self):
         out = self.get_command_output('show ports', timeout=60)
         out = out.decode(_LOCALE).split('\r\n')
-        for line in out[2:-2]:
+        return out[2:-2]
+
+    def list_ports(self):
+        out = self.list_ports_internal()
+        for line in out:
             print(line)
 
     def logon(self):
