@@ -41,6 +41,20 @@ Can be used to connect or disconnect ports by name.
 ```
 
 # Installation RHEL 7.x
+## Function to install Python3.4 
+```
+install_python34() {
+    pushd /root 1>/dev/null
+    wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz > /dev/null 2>&1
+    tar zxvf Python-3.4.3.tgz > /dev/null 2>&1
+    pushd /root/Python-3.4.3
+    ./configure > /dev/null 2>&1
+    make > /dev/null 2>&1
+    make install > /dev/null 2>&1
+    popd 1>/dev/null
+}
+
+```
 ## Install Python 3.4 using SCL
 ```
 python install scl-utils -y
@@ -79,6 +93,11 @@ virtualenv "$MYENV"
 yum install -y python-setuptools
 easy_install pip
 pip install selectors34
+```
+
+## Install Python 3.4 using SCL
+```
+python install scl-utils -y
 ```
 
 # For automation you can use code blocks like this
