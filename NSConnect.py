@@ -107,13 +107,17 @@ class NetScout_Command(object):
 
     def connect_hs3200(self, ports):
         substr = "ERROR"
+        port_compatible= "Port interfaces are not compatible!"
         print('Connecting ports {} {}'.format(*ports))
         port_list = self.list_ports_internal()
         for i in ports:
             if not i in port_list:
                 print("INPUT PORT invalid ,please check")
                 return
-        self.issue_command('connect -d PORT {} PORT {}'.format(*ports))
+        conn_out = self.get_command_output('connect -d PORT {} PORT {}'.format(*ports))
+        if port_compatible in str(conn_out):
+            print(port_compatible)
+            return
         out = self.get_command_output('activate -d PORT {} PORT {}'.format(*ports))
         out = out.decode(_LOCALE).split('\r\n')
         for line in out[0:-1]:
@@ -137,8 +141,17 @@ class NetScout_Command(object):
         print('Disconnecting connections to ports {} {}'.format(*ports))
         for port in ports:
             connected_ports = self.getconnected(port)
+            alltopo = self.getalltopo()
             if len(connected_ports) != 0:
-                self.issue_command('deactivate -d PORT {} PORT {}'.format(*connected_ports))
+                for topo in alltopo:
+                    self.issue_command('deactivate -d PORT {} PORT {} -t \'{}\' '.format(*connected_ports,topo))
+
+
+    def getalltopo(self):
+        out = self.get_command_output('show topo all', timeout=60)
+        out = out.decode(_LOCALE).split('\r\n')
+        return [ " ".join(i.split(" ")[0:-1]).rstrip(" ") for i in out[2:-2]]
+
 
     def getconnected(self, port):
         substr="Name"
