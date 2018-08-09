@@ -138,7 +138,7 @@ class NetScout_Command(object):
                 self.issue_command('connect PORT {} to null force'.format(port))
 
     def disconnect_hs3200(self, ports):
-        print('Disconnecting connections to ports {} {}'.format(*ports))
+        print('Disconnecting connections to ports {}'.format(" ".join(ports)))
         for port in ports:
             connected_ports = self.getconnected(port)
             alltopo = self.getalltopo()
