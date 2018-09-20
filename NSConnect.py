@@ -142,7 +142,7 @@ class NetScout_Command(object):
         for port in ports:
             connected_ports = self.getconnected(port)
             if len(connected_ports) != 0:
-                self.issue_command('deactivate -d PORT {} PORT {}'.format(*connected_ports))
+                self.issue_command('disconnect -d PORT {} PORT {}'.format(*connected_ports))
 
 
     def getalltopo(self):
