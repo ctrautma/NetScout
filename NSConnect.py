@@ -151,6 +151,13 @@ class NetScout_Command(object):
         return [ " ".join(i.split(" ")[0:-1]).rstrip(" ") for i in out[2:-2]]
 
 
+    def isconnected(self, port):
+        connect_status=0
+        connected_ports = self.getconnected(port)
+        if len(connected_ports) != 0:
+            connect_status=1
+        return connect_status
+
     def getconnected(self, port):
         substr="Name"
         ifaces=[]
@@ -255,6 +262,9 @@ class NetScout_Command(object):
             self.show_port_info(self.args.portinfo)
         if self.args.showconnections:
             self.show_port_connections()
+        if self.args.isconnected:
+            self.isconnected(self.args.isconnected)
+
 
     def resetconfig(self):
         if os.path.exists('settings.cfg'):
@@ -314,5 +324,7 @@ if __name__ == "__main__":
                         help='Reset config file', required=False)
     parser.add_argument('--showconnections', action='store_true',
                         help='Show active port connections', required=False)
+    parser.add_argument('--isconnected', nargs='+', type=str,
+                        help='Returns 1 if port is connected. Need port as an argument.', required=True)
     args = parser.parse_args()
     NETS = NetScout_Command(parser, args)
