@@ -325,6 +325,6 @@ if __name__ == "__main__":
     parser.add_argument('--showconnections', action='store_true',
                         help='Show active port connections', required=False)
     parser.add_argument('--isconnected', nargs='+', type=str,
-                        help='Returns 1 if port is connected. Need port as an argument.', required=True)
+                        help='Returns 1 if port is connected. Need port as an argument.', required=False)
     args = parser.parse_args()
     NETS = NetScout_Command(parser, args)
