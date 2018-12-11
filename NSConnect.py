@@ -157,7 +157,7 @@ class NetScout_Command(object):
         connected_ports = self.getconnected(port)
         if len(connected_ports) != 0:
             connect_status=1
-        return connect_status
+        print(connect_status)
 
     def getconnected(self, port):
         substr="Name"
