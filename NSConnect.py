@@ -154,7 +154,7 @@ class NetScout_Command(object):
 
     def isconnected(self, port):
         connect_status=0
-        connected_ports = self.getconnected(port)
+        connected_ports = self.getconnected(port[0])
         if len(connected_ports) != 0:
             connect_status=1
         print(connect_status)
