@@ -54,6 +54,7 @@ class NetScout_Command(object):
                     args.listgroups,
                     args.portinfo,
                     args.resetconfig,
+                    args.isconnected,
                     args.showconnections]):
             print("No actions provided...")
             parser.print_help()
