@@ -34,10 +34,14 @@ Copyright 2016 Christian Trautman ctrautma@redhat.com
 
 import argparse
 import base64
-import configparser
-import locale
 import os
 import sys
+
+if sys.version_info[0] == 2:
+    import ConfigParser as configparser
+else:
+    import configparser
+import locale
 import telnetliblog
 from time import sleep
 
