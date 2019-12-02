@@ -120,6 +120,7 @@ class NetScout_Command(object):
                 print("INPUT PORT invalid ,please check")
                 return
         #First disconnet all ports
+        print("First disconnect all ports that connected")
         self.disconnect_hs3200(ports)
         conn_out = self.get_command_output('connect -d PORT {} PORT {}'.format(*ports))
         #print(conn_out)
@@ -134,6 +135,8 @@ class NetScout_Command(object):
                 self.disconnect_hs3200(ports)
                 self.connect_hs3200(ports)
                 break
+        print('Connecting ports {} {} Done OK'.format(*ports))
+        pass
 
     #def disconnect(self, ports):
     #    for port in ports:
