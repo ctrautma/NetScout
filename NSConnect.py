@@ -119,11 +119,15 @@ class NetScout_Command(object):
             if not i in port_list:
                 print("INPUT PORT invalid ,please check")
                 return
+        #First disconnet all ports
+        self.disconnect_hs3200(ports)
         conn_out = self.get_command_output('connect -d PORT {} PORT {}'.format(*ports))
+        #print(conn_out)
         if port_compatible in str(conn_out):
             print(port_compatible)
             return
         out = self.get_command_output('activate -d PORT {} PORT {}'.format(*ports))
+        #print(out)
         out = out.decode(_LOCALE).split('\r\n')
         for line in out[0:-1]:
             if substr in line:
