@@ -122,7 +122,7 @@ class NetScout_Command(object):
         #First disconnet all ports
         print("First disconnect all ports that connected")
         self.disconnect_hs3200(ports)
-        conn_out = self.get_command_output('connect -d PORT {} PORT {}'.format(*ports))
+        conn_out = self.get_command_output('connect -i -d PORT {} PORT {}'.format(*ports))
         #print(conn_out)
         if port_compatible in str(conn_out):
             print(port_compatible)
