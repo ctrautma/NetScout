@@ -101,9 +101,6 @@ class NetScout_Command(object):
         self.model = self.get_switch_model()
         self.parse_args()
 
-    #def connect(self, ports):
-    #    self.issue_command('connect PORT {} to PORT {} force'.format(*ports))
-
     def connect(self, ports):
         if self.model == "HS-3200":
             self.connect_hs3200(ports)
@@ -123,12 +120,10 @@ class NetScout_Command(object):
         print("First disconnect all ports that connected")
         self.disconnect_hs3200(ports)
         conn_out = self.get_command_output('connect -i -d PORT {} PORT {}'.format(*ports))
-        #print(conn_out)
         if port_compatible in str(conn_out):
             print(port_compatible)
             return
         out = self.get_command_output('activate -d PORT {} PORT {}'.format(*ports))
-        #print(out)
         out = out.decode(_LOCALE).split('\r\n')
         for line in out[0:-1]:
             if substr in line:
@@ -137,10 +132,6 @@ class NetScout_Command(object):
                 break
         print('Connecting ports {} {} Done OK'.format(*ports))
         pass
-
-    #def disconnect(self, ports):
-    #    for port in ports:
-    #        self.issue_command('connect PORT {} to null force'.format(port))
 
     def disconnect(self, ports):
         if self.model == "HS-3200":
@@ -152,10 +143,7 @@ class NetScout_Command(object):
     def disconnect_hs3200(self, ports):
         print('Disconnecting connections to ports {}'.format(" ".join(ports)))
         for port in ports:
-            connected_ports = self.getconnected(port)
-            if len(connected_ports) != 0:
-                self.issue_command('disconnect -d PORT {} PORT {}'.format(*connected_ports))
-
+            self.issue_command(f'disconnect -d PORT {port} PORT *')
 
     def getalltopo(self):
         out = self.get_command_output('show topo all', timeout=60)
@@ -166,20 +154,19 @@ class NetScout_Command(object):
     def isconnected(self, port):
         connect_status=0
         connected_ports = self.getconnected(port[0])
-        if len(connected_ports) != 0:
-            connect_status=1
-        print(connect_status)
+        if None != connected_ports:
+            print(connected_ports)
+            return True
+        else:
+            return False
 
     def getconnected(self, port):
-        substr="Name"
-        ifaces=[]
-        out = self.get_command_output('show connection details port {}'.format(port), timeout=60)
+        out = self.get_command_output('show conn ports', timeout=60)
         out = out.decode(_LOCALE).split('\r\n')
         for line in out[0:-1]:
-            if substr in line:
-                part = line.split()[2]
-                ifaces.append(part)
-        return ifaces
+            if port in line:
+                return line
+        return None
 
     def get_switch_name(self):
         out = self.get_command_output('show switch', timeout=60)
@@ -201,17 +188,17 @@ class NetScout_Command(object):
 
     def downloadhelp(self):
         self.tn.write('\r'.encode(_LOCALE))
-        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=30)
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=30)
         self.tn.write('help\r'.encode(_LOCALE))
         print("Downloading help file to helpfile.txt")
-        out = self.tn.expect(['=\> '.encode(_LOCALE)], timeout=300, decoding='windows-1252')
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=300, decoding='windows-1252')
         with open('helpfile.txt', 'w') as fh:
             fh.writelines(str(out[2]))
         sys.exit(0)
 
     def issue_command(self, cmd, timeout=30):
         self.tn.write('{}\r'.format(cmd).encode(_LOCALE))
-        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=timeout)
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=timeout)
         if out[0] != -1:
             return True
         else:
@@ -219,7 +206,7 @@ class NetScout_Command(object):
 
     def get_command_output(self, cmd, timeout=30):
         self.tn.write('{}\r'.format(cmd).encode(_LOCALE))
-        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=timeout)
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=timeout)
         if out[0] != -1:
             return out[2]
         else:
@@ -244,7 +231,7 @@ class NetScout_Command(object):
     def logon(self):
         print("Attempting to logon to Netscout...")
         self.tn.write('\r'.encode(_LOCALE))
-        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=30)
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=30)
         if out[0] != -1:
             self.tn.write('logon {}\r'.format(self._username).encode(_LOCALE))
         else:
@@ -255,7 +242,7 @@ class NetScout_Command(object):
             self.tn.write('{}\r'.format(self._password).encode(_LOCALE))
         else:
             raise RuntimeError('Did not get password prompt!!!')
-        out = self.tn.expect(['=\>'.encode(_LOCALE)], timeout=30)
+        out = self.tn.expect([r'=>'.encode(_LOCALE)], timeout=30)
         if str(out[2]).find('Access denied. Username/Password is invalid!') > -1:
             raise Exception('Access denied. Username/Password is invalid!')
         if out[0] == -1:
