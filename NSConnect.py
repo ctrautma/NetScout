@@ -143,7 +143,7 @@ class NetScout_Command(object):
     def disconnect_hs3200(self, ports):
         print('Disconnecting connections to ports {}'.format(" ".join(ports)))
         for port in ports:
-            self.issue_command(f'disconnect -d PORT {port} PORT *')
+            self.issue_command(f'disconnect -d -F PORT {port} PORT *')
 
     def getalltopo(self):
         out = self.get_command_output('show topo all', timeout=60)
