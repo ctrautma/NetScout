@@ -1,0 +1,1710 @@
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port dell56-mlx5-1
+INFORMATION ON dell56-mlx5-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 11:50:12AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             1
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  DISABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.02
+INFORMATION ON 01.01.02:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 08/29/19 at 03:55:58AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             5
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.02-3
+INFORMATION ON 01.01.02-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 08/29/19 at 03:56:13AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             7
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port dell740-03-mlx5-1
+INFORMATION ON dell740-03-mlx5-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 11:50:12AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             9
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port dell740-03-mlx5-2
+INFORMATION ON dell740-03-mlx5-2:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 11:50:39AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             13
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+SFP Diagnostic Alarm:  DISABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.05
+INFORMATION ON 01.01.05:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 08/29/19 at 03:55:58AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             17
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.05-3
+INFORMATION ON 01.01.05-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 08/29/19 at 03:56:13AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             19
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.06
+INFORMATION ON 01.01.06:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             21
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.06-3
+INFORMATION ON 01.01.06-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             23
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.07
+INFORMATION ON 01.01.07:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             25
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.08
+INFORMATION ON 01.01.08:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             29
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 09:05:22PM 07/14/19
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.09
+INFORMATION ON 01.01.09:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 07:40:06PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             33
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 03:25:04AM 04/30/19
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.10
+INFORMATION ON 01.01.10:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 07:40:20PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             37
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 03:25:03AM 04/30/19
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.11
+INFORMATION ON 01.01.11:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 02:56:50PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             41
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 08:54:34PM 07/16/19
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.12
+INFORMATION ON 01.01.12:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 07/16/19 at 08:23:17PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             45
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.13
+INFORMATION ON 01.01.13:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 07:40:06PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             49
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.14
+INFORMATION ON 01.01.14:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 07:40:20PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             53
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.15-1
+INFORMATION ON 01.01.15-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/11/19 at 07:01:23AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             57
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 03:03:16AM 10/12/18
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.15-2
+INFORMATION ON 01.01.15-2:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/11/19 at 07:01:56AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             58
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 03:03:16AM 10/12/18
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.15-3
+INFORMATION ON 01.01.15-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             59
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.15-4
+INFORMATION ON 01.01.15-4:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             60
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.16-1
+INFORMATION ON 01.01.16-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             61
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.17-1
+INFORMATION ON 01.01.17-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             65
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.17-2
+INFORMATION ON 01.01.17-2:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             66
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.17-3
+INFORMATION ON 01.01.17-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             67
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.17-4
+INFORMATION ON 01.01.17-4:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             68
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.18-1
+INFORMATION ON 01.01.18-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             69
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.19-1
+INFORMATION ON 01.01.19-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/11/19 at 07:01:23AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             73
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 07:54:55PM 10/31/18
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.19-2
+INFORMATION ON 01.01.19-2:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/11/19 at 07:01:56AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             74
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.19-3
+INFORMATION ON 01.01.19-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             75
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.19-4
+INFORMATION ON 01.01.19-4:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             76
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.20-1
+INFORMATION ON 01.01.20-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             77
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.21
+INFORMATION ON 01.01.21:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             81
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.22
+INFORMATION ON 01.01.22:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             85
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.23
+INFORMATION ON 01.01.23:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 02:56:50PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             89
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.24
+INFORMATION ON 01.01.24:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 07/16/19 at 08:23:17PM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             93
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.25-1
+INFORMATION ON 01.01.25-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             97
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  DISABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.26-1
+INFORMATION ON 01.01.26-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             101
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.26-3
+INFORMATION ON 01.01.26-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             103
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port dell56-mlx5-2
+INFORMATION ON dell56-mlx5-2:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/03/19 at 11:50:39AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             105
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: 09:58:05PM 12/23/18
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.28-1
+INFORMATION ON 01.01.28-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             109
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.28-3
+INFORMATION ON 01.01.28-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             111
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  NO
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.29-1
+INFORMATION ON 01.01.29-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/28/18 at 01:43:37AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             113
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.29-3
+INFORMATION ON 01.01.29-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/28/18 at 01:43:17AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             115
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.30-1
+INFORMATION ON 01.01.30-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/28/18 at 01:43:37AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             117
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  YES
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.30-3
+INFORMATION ON 01.01.30-3:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 25.78125G
+
+*** CONNECTION STATUS ***
+CONNECTED AS:
+   Packet Blade Connection 
+CONNECTED TO:
+    
+      Connected by administrator on 09/28/18 at 01:43:17AM
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             119
+INTERFACE:        25G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    YES
+ALARMED:  YES
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.31-1
+INFORMATION ON 01.01.31-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             121
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
+Checking for config file...
+Config file found and read...
+Connecting to Netscout at 10.73.88.8
+Attempting to logon to Netscout...
+ show information Port 01.01.32-1
+INFORMATION ON 01.01.32-1:
+
+*** PORT TERMINAL INFORMATION ***
+SPEED           : 100.3125 Gb
+
+*** CONNECTION STATUS ***
+
+*** SECURITY STATUS ***
+IN A DOMAIN:  NO
+
+*** PHYSICAL INFORMATION ***
+SWITCH:           HS-3200
+SWITCH IP:        10.73.88.8
+CHASSIS:          1
+PIM:              1
+PORT:             125
+INTERFACE:        100G Ethernet
+LINK PROPAGATION: DEFAULT
+
+*** ALARM INFORMATION ***
+Defined Alarm Conditions:
+AUTOARM:  YES
+ARMED:    NO
+ALARMED:  NO
+   Invalid port alarm
+   Invalid port alarm
+SFP Diagnostic Alarm:  ENABLED
+Congestion Alarm:  ENABLED   Last alarmed: None
+
